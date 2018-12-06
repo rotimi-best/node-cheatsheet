@@ -5,6 +5,16 @@
 *-----------------------------------------------*/
 const { log } = console;
 
+//=========================================================
+/*Testing Array destructuring
+const arr = [[1,2], [3,4]];
+
+const so = (args) => {
+  for(const arg of args) {
+    const [first, second] = arg;
+    log(first, second);
+  }
+}
 
 
 
