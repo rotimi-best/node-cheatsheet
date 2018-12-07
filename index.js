@@ -3,7 +3,57 @@
 *        ROTIMI-BEST CHEAT SHEET                *
 *                                               *
 *-----------------------------------------------*/
-const { log } = console;
+const { log, error } = console;
+const len = x => x.length;
+//=========================================================
+/*Testing split with names
+const a = 'Best Rotimi Ibitoye';
+const names = a.split(' ');
+const [firstname, ...othernames] = names;
+
+const lastname = othernames.join(' ');
+
+log(firstname, lastname);*/
+
+
+
+//=========================================================
+/*Longest string in an array
+const all = ['dsf', 'hheeqq', '.mrmgfdmgdfgdfgdfgdfg', 'sdf', 'sdfsdf', '333'];
+let s = {num: 0, str: ''};
+
+all.forEach(val => {
+  if (len(val) > s.num) {
+    s = {num: len(val), str: val};
+  }
+});
+
+log(s)*/
+
+
+//=========================================================
+/*Getting Length Dynamically
+const l = x => x.length;
+
+const v1 = '1';
+const v2 = '2_u';
+
+console.log(l(v1), l(v2));*/
+
+
+//=========================================================
+/*Testing Push
+ const arr = [];
+
+ for (let i=0; i<4; i++) {
+   arr.push(i);
+ }
+
+const [on, tw, ...rest] = arr;
+log(on)
+log(tw)
+log(rest)*/
+
 
 //=========================================================
 /*Testing Array destructuring
@@ -14,13 +64,11 @@ const so = (args) => {
     const [first, second] = arg;
     log(first, second);
   }
-}
-
-
+}*/
 
 
 //=========================================================
-/* USING SWITCH AND AWAIT INSIDE ANOTHER AWAIT */
+/* USING SWITCH AND AWAIT INSIDE ANOTHER AWAIT
 const aFunction = data => {
   return new Promise((res, rej) => {
     setTimeout(() => {
@@ -49,7 +97,7 @@ const aSwitch = async x => {
       log('Nothing chosen');
   }
 }
-aSwitch(1); 
+aSwitch(1); */
 
 
 
