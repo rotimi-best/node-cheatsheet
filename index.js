@@ -5,6 +5,13 @@
 *-----------------------------------------------*/
 const { log, error } = console;
 const len = x => x.length;
+//=========================================================
+/*Trying indexof 
+const someArr = ["bas", "bras", "soil", "all"];
+const someStr = 'soil';
+log(someArr.includes(someStr))
+log(someArr.indexOf(someStr))
+*/
 
 
 //=========================================================
