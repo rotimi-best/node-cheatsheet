@@ -3,8 +3,19 @@
 *        ROTIMI-BEST CHEAT SHEET                *
 *                                               *
 *-----------------------------------------------*/
+
+//=========================================================
+/* Using exec in regex
 const { log, error } = console;
 const len = x => x.length;
+let a = [];
+let s = len(a) || 'str';
+// log(s)
+
+const ar = '123, dfgdfg';
+const af = /\,\s([a-zA-Z]+)/g.exec(ar);
+console.log(af[1])*/
+
 //=========================================================
 /*Trying indexof 
 const someArr = ["bas", "bras", "soil", "all"];
