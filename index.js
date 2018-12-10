@@ -5,6 +5,24 @@
 *-----------------------------------------------*/
 const { log, error } = console;
 const len = x => x.length;
+
+
+//=========================================================
+/*Manipulating objects 
+const customFields = ["Brad", "traversy", "Best", "Rotimi"];
+
+const useCustomFields = {
+  [customFields[0]]: "Teacher",
+  [customFields[1]]: "Trainer",
+  [customFields[2]]: "CEO",
+  [customFields[3]]: "Tech Lead"
+};
+
+log(useCustomFields)*/
+
+
+
+
 //=========================================================
 /*Testing split with names
 const a = 'Best Rotimi Ibitoye';
