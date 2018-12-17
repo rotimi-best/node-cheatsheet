@@ -3,18 +3,28 @@
 *        ROTIMI-BEST CHEAT SHEET                *
 *                                               *
 *-----------------------------------------------*/
+const { log, error } = console;
+const len = x => x.length;
+
+//=========================================================
+/* default arr value if not exists
+const fname = 'Johnson';
+const names = fname.split(' ');
+const firstname = names[0];
+const lastname = names[1] || ' ';
+
+log(firstname, lastname);*/
+
 
 //=========================================================
 /* Using exec in regex
-const { log, error } = console;
-const len = x => x.length;
 let a = [];
 let s = len(a) || 'str';
 // log(s)
 
 const ar = '123, dfgdfg';
-const af = /\,\s([a-zA-Z]+)/g.exec(ar);
-console.log(af[1])*/
+const af = /\,\s([a-zA-Z]+)/g.exec(ar)[1];
+console.log(af)*/
 
 //=========================================================
 /*Trying indexof 
