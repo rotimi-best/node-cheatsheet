@@ -7,6 +7,32 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
+/* Diff between function a(){} and const a = () => {};
+//fa(1); This throws error
+const fa = x => {
+  log('fa', x);
+};
+fa(2);
+
+fb(1) // This doesn't throw error
+function fb(x) {
+  log('fb', x);
+}
+fb(2);
+
+//=========================================================
+/* Check if Replace empty string throws error
+
+const someArr = [[1,2,3], [4,5,6]];
+const talk = someArr[0][4] || 'You said --said--';
+const talkMore = talk.replace(/--said--/g, "My name");
+log(talkMore)
+
+const fname = 'Dr Johnson Brado Omole';
+const ifDoctor = name => RegExp('dr.* [a-zA-Z]+', 'i').test(name);
+log(ifDoctor("dr"))
+
+//=========================================================
 /* default arr value if not exists
 const fname = 'Johnson';
 const names = fname.split(' ');
