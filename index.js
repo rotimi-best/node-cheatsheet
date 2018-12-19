@@ -7,6 +7,30 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
+/* Playing with objects and names #morehoisting
+let tz = "variable tz";
+const details = {tz: "object tz"}
+
+function say(obj) {
+  let { tz } = obj;
+  console.log(tz);
+  tz = tz;
+}
+say(details);
+
+const country = "Biggest Federation Area";
+const sCountry = country.split('Area');
+const russia = RegExp('Russia', 'i').test(country);
+log(sCountry);
+
+const names = [];
+if (names.length > 0) console.log(true);
+else console.log(false);
+
+if (names.length) console.log(true);
+else console.log(false);
+
+//=========================================================
 /* Diff between function a(){} and const a = () => {};
 //fa(1); This throws error
 const fa = x => {
