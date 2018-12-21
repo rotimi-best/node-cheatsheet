@@ -6,6 +6,43 @@
 const { log, error } = console;
 const len = x => x.length;
 
+
+//=========================================================
+/* Testing numbers and integers
+const str = "1 year ago";
+const fkstr = "ago";
+const split1 = str.split(' ');
+const split2 = fkstr.split(' ');
+const firstFrmSplit = (split1[0]);
+const secondFrmSplit = (split2[0]);
+
+function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+if (isNumber(firstFrmSplit)) log('first',firstFrmSplit)
+if (isNumber(secondFrmSplit)) log('second',secondFrmSplit);
+
+const russia = RegExp('hour').test("24 hours");
+
+log(isFinite(18.0000))
+
+function tell(word) {
+  log(word);
+  word = "new word";
+  log(word);
+}
+
+tell("old word");
+
+const date = new Date();
+
+function say(a, b, c){
+  if (a) log(b);
+  if(c) log(c);
+}
+
+say('','', 'c')
 //=========================================================
 /* Playing with objects and names #morehoisting
 let tz = "variable tz";
