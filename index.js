@@ -6,6 +6,24 @@
 const { log, error } = console;
 const len = x => x.length;
 
+//=========================================================
+/* Playing with date and time
+const time1 = "08:37:43";
+const time2 = "10:57:43";
+const time3 = "12:37:43";
+const time4 = "23:37:43";
+
+log(time2 < time1)
+
+const daysInTextArr = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const today = new Date("December 23, 2018");
+const day = today.getDate();
+const dayText = today.getDay() === 0 ? 7 : today.getDay();
+
+log(daysInTextArr[dayText - 1])
+log(dayText)
+
 
 //=========================================================
 /* Testing numbers and integers
