@@ -7,6 +7,13 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
+/* Testing promises and then with console.log
+new Promise((resolve, reject) => {
+  setTimeout(() => resolve("I got the job"), 2000);
+}).then(console.log)
+.catch(console.error);
+
+//=========================================================
 /* Playing with date and time
 const time1 = "08:37:43";
 const time2 = "10:57:43";
