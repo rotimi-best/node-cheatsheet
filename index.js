@@ -7,36 +7,11 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
-/* Changing identifiers inside a function*/
-const user = {
-  name: "Best"
-};
-
-function getUser() {
-  let { name } = user;
-  console.log(name);
-
-  name = "John";
-
-  log(name)
-}
-
-getUser();
-
-//=========================================================
 /* Testing promises and then with console.log
-
-//================  Example 1
 new Promise((resolve, reject) => {
-  setTimeout(() => resolve("Happy new year"), 2000);
-})
-.then(console.log);
-
-//=================  Example 2
-new Promise((resolve, reject) => {
-  setTimeout(() => resolve("Happy new year"), 2000);
-})
-.then(x => console.log(x)); */
+  setTimeout(() => resolve("I got the job"), 2000);
+}).then(console.log)
+.catch(console.error);
 
 //=========================================================
 /* Playing with date and time
