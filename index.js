@@ -7,7 +7,42 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
-/* Changing identifiers inside a function*/
+/* Array destructuring
+const mRoutes = ["/go", "/come"];
+
+const routes = [
+"/path",
+"/growth",
+"/users",
+...mRoutes
+];
+
+console.log(routes)
+
+const url = "https://www.google.com/gn/jeffbezos/";
+
+const urlParts = url.split('/');
+
+const newUrl = urlParts.join('/');
+
+log(urlParts)
+log(newUrl)
+
+
+//=========================================================
+/* Checking for undefined args in a func
+function runner(a, b) {
+  if (!b) {
+    b = "runner"
+  }
+
+  log(a, b);
+}
+
+runner("I am a");
+
+//=========================================================
+/* Changing identifiers inside a function
 const user = {
   name: "Best"
 };
