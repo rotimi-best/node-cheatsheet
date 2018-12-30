@@ -7,6 +7,17 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
+/* Incrementing number
+let errors = 0;
+
+setInterval(() => {
+  errors++;
+  log('Error occured', errors);
+
+  if (errors > 7) process.exit();
+}, 100);
+
+//=========================================================
 /* Array destructuring
 const mRoutes = ["/go", "/come"];
 
