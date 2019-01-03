@@ -7,6 +7,60 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
+/* Check if russian or english word.
+
+const testIfNameHasDot = name => new RegExp("[а-я А-Я A-Z a-z]").test(name);
+
+log(testIfNameHasDot("Best Братт"));
+
+//=========================================================
+/* Object to array/ Turn an object into array using the keys of another object
+const emUser = {
+  name: "",
+  age: "",
+  bar: "some"
+};
+
+const { bar = "bar"} = emUser;
+
+log(bar)
+
+const user = {
+    name: "Best",
+    age: "No your business"
+};
+
+const userArr = Object.keys(emUser).map(data => user[data])
+log(userArr)
+
+//=========================================================
+/* DEstructring and using same parent variable name
+function getMe() {
+  const { name } = user;
+
+  if (user) {
+    const { name } = emUser;
+    return {
+      age: "Your business"
+    }
+  }
+  return {
+    name: "Best",
+    age: "No your business"
+  }
+}
+
+const namer = getMe().age;
+log(namer)
+
+//=========================================================
+/* Check if zero can be counted
+const zero = 123234;
+
+if (len(zero)) log('Not empty')
+else if (!len(zero)) log('empty')
+
+//=========================================================
 /* Incrementing number
 let errors = 0;
 
