@@ -7,6 +7,46 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
+/* Increment result of promise
+function rand() {
+  return new Promise((res, rej) => {
+    setTimeout(_ => res(5));
+  });
+}
+
+async function calc() {
+  const no = await rand() + 1;
+
+  log(no)
+}
+
+calc()
+
+//=========================================================
+/* Break loop
+const arr = [1,2,3,4,5];
+// const arr = [{
+//   a: 1,b: 2, c: 3, d: 4, e: 5
+// }];
+
+for (const val of arr) {
+  log(val)
+  if (val === 3) break;
+}
+
+//=========================================================
+/* use an obj to form some other objects
+const data = {
+  name: "Brad Traversy",
+  age: 30
+};
+
+const newData = {...data, old: true, children: 15};
+const new2Data = {...data, old: false, children: 5};
+console.log(newData);
+console.log(new2Data);
+
+//=========================================================
 /* Check if russian or english word.
 
 const testIfNameHasDot = name => new RegExp("[а-я А-Я A-Z a-z]").test(name);
@@ -55,10 +95,10 @@ log(namer)
 
 //=========================================================
 /* Check if zero can be counted
-const zero = 123234;
+const zero = 0;
 
-if (len(zero)) log('Not empty')
-else if (!len(zero)) log('empty')
+if (len(zero.toString())) log('THERE IS',len(zero))
+else if (!len(zero.toString())) log('NOTHING',len(zero))
 
 //=========================================================
 /* Incrementing number
