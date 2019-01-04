@@ -7,6 +7,11 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
+/* Remove first val in array
+const arr = [[1,2,3], [4,5,6], [7,8,9]];
+arr.shift()
+log(arr)
+//=========================================================
 /* Increment result of promise
 function rand() {
   return new Promise((res, rej) => {
