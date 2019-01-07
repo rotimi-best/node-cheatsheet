@@ -6,6 +6,31 @@
 const { log, error } = console;
 const len = x => x.length;
 
+// What does this mean?
+// !!array.reduce(function(a, b){ return (a === b) ? a : NaN; });
+
+const numbers = [];
+const k = 9;
+
+// TODO::
+// Check if there are arguments
+// Check if first arg is an array
+// If array check if the array consists of number
+// If d 2nd arg is a number 
+// currentNumber that holds the no in d array we are adding to.
+// Loop through other numbers in the array and add them up to currentNumber. If it equals k then return true
+function checkIfAddUp(numbers, k) {
+  if (!numbers || !k) {
+    return false;
+  } else if(!Array.isArray(numbers) || !len(numbers)) {
+    return false;
+  } else if(isNaN(k)) {
+    return false;
+  }
+}
+
+
+
 //=========================================================
 /* Remove first val in array
 const arr = [[1,2,3], [4,5,6], [7,8,9]];
