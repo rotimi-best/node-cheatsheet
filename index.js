@@ -7,6 +7,19 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
+/* Playing with template strings
+function sayHi(){
+  return "hi";
+}
+
+function sayBye() {
+  return "bye";
+}
+
+log(`${sayHi() sayBye()}`) // Error
+log(`${sayHi()} ${sayBye()}`); // Correct
+
+//=========================================================
 /* Get value of object in a function using the passed arg as the key
 const anobj = {
   abc: "abc123",
