@@ -6,8 +6,24 @@
 const { log, error } = console;
 const len = x => x.length;
 
+//=========================================================
+/* Checking numbers
+const anum = 0;
+const bnum = 1;
+
+if (anum) log('something', anum)
+if (bnum) log('something', bnum);
+
 // What does this mean?
 // !!array.reduce(function(a, b){ return (a === b) ? a : NaN; });
+
+const range = "Northern Europe!A100:Z100";
+const range1 = "Ghana Europe!A100:Z0";
+const range2 = "UK!A100:Z10067";
+
+const num = range2.split("Z")[1];
+
+// log(split)
 
 const numbers = [];
 const k = 9;
