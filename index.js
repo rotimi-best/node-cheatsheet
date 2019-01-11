@@ -7,6 +7,17 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
+/* Get value of object in a function using the passed arg as the key
+const anobj = {
+  abc: "abc123",
+  def: "def456"
+};
+
+function getObj(val) {
+  log('an object val',anobj[val])
+}
+getObj("def")
+//=========================================================
 /* Checking numbers
 const anum = 0;
 const bnum = 1;
