@@ -7,6 +7,16 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
+/* Using more than one or (||) for null/undefined/empty variable
+const someArr = ["a", "", "c", "", 1, null];
+const nothing = null;
+
+const copyArr = someArr.map(val => val || nothing || "nothing");
+
+log(someArr)
+log(copyArr)
+
+//=========================================================
 /* Playing with template strings
 function sayHi(){
   return "hi";
