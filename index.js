@@ -6,6 +6,16 @@
 const { log, error } = console;
 const len = x => x.length;
 
+
+//=========================================================
+/* Testing the || and && operators together
+const arg1 = 1;
+const arg2 = 2;
+const b = "";
+const v = "";
+
+if (b || arg1 && v) log('got it')
+else log('nope')
 //=========================================================
 /* Using more than one or (||) for null/undefined/empty variable
 const someArr = ["a", "", "c", "", 1, null];
