@@ -6,7 +6,24 @@
 const { log, error } = console;
 const len = x => x.length;
 
+//=========================================================
+/*Using or inside a string literal
+const val = 0;
 
+log(`${len(val) || "nodfdsfsaf fsdf"}`)
+
+//=========================================================
+/* Passing variables into regex
+const best = "Best";
+const regex = new RegExp(best);
+log(regex)
+
+const args = {a: 1, b: 2, c: 3};
+const args2 = {a: 2, b: 3, c: 4};
+
+const { a, b, c} = args || args2;
+
+log(a, b, c)
 //=========================================================
 /* Testing the || and && operators together
 const arg1 = 1;
