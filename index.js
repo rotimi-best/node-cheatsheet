@@ -6,6 +6,72 @@
 const { log, error } = console;
 const len = x => x.length;
 
+
+//=========================================================
+/* Fizzbuz game
+function fizzBazGame() {
+  const three = "feez";
+  const five = "baz";
+  const seven = "cola";
+  const eleven = "banana";
+
+  for (let i=1; i<=100; i++) {
+    let result = i;
+
+    if (i % 3 === 0){
+      result = three;
+    }
+
+    if (i % 5 === 0) {
+      result = five;
+    }
+
+    if (i % 7 === 0) {
+      result = seven;
+    }
+
+    if (i % 11 === 0) {
+      result = eleven;
+    }
+
+    if (i % 3 === 0 && i % 5 === 0) {
+      result = `${three}${five}`;
+    }
+
+    if (i % 3 === 0 && i % 7 === 0) {
+      result = `${three}${seven}`;
+    }
+
+    if (i % 3 === 0 && i % 11 === 0) {
+      result = `${three}${eleven}`;
+    }
+
+    if (i % 5 === 0 && i % 11 === 0) {
+      result = `${five}${eleven}`;
+    }
+
+    if (i % 5 === 0 && i % 7 === 0) {
+      result = `${five}${seven}`;
+    }
+
+    if (i % 7 === 0 && i % 11 === 0) {
+      result = `${seven}${eleven}`;
+    }
+
+    if (i % 3 === 0 && i % 5 === 0 && i % 7 === 0) {
+      result = `${three}${five}${seven}`;
+    }
+
+    if (i % 3 === 0 && i % 5 === 0 && i % 7 === 0 && i % 11 === 0) {
+      result = `${three}${five}${seven}${eleven}`;
+    }
+
+    console.log(result);
+  }
+}
+
+
+fizzBazGame();
 //=========================================================
 /*Using or inside a string literal
 const val = 0;
