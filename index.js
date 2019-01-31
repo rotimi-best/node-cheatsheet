@@ -6,7 +6,21 @@
 const { log, error } = console;
 const len = x => x.length;
 
+//=========================================================
+/* Naming variables without const, let or var
 
+convert = () => {
+  const date1 = new Date("2019-01-27 09:34:28");
+  const date = new Date();
+  console.log(date.getSeconds());
+}
+
+state = {
+  price: 10
+}
+
+convert();
+log(state)
 //=========================================================
 /* Fizzbuz game
 function fizzBazGame() {
