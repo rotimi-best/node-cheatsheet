@@ -6,6 +6,22 @@
 const { log, error } = console;
 const len = x => x.length;
 
+
+//=========================================================
+/* Renaming a destructured object
+const obj = {
+  name: "Best",
+  position: "CEO"
+};
+
+function displayer(obj) {
+  const { name: a, position } = obj;
+
+  console.log(a, position);
+}
+
+displayer(obj)
+
 //=========================================================
 /* Naming variables without const, let or var
 
