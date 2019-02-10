@@ -6,7 +6,80 @@
 const { log, error } = console;
 const len = x => x.length;
 
+//=========================================================
+/*  Get last 2 digits from the year
+const today = new Date("July 20, 1998 00:20:18");
+const year = today.getFullYear().toString().substr(2,2);
+console.log(year, '\n\n')
 
+//=========================================================
+/* Implemented a caching system for modules
+
+// All functions in the application
+const modules = {
+  smile: (nameA = 'Faith', nameB = 'Grace') => {
+    const statement = `${nameA} and ${nameB} are smiling`;
+    return statement;
+  },
+  favour: (name = 'Faith') => {
+    const statement = `${name} is higly favoured`;
+    return statement;
+  },
+  soar: (name = 'Faith') => {
+    const statement = `${name} is soaring`;
+    return statement;
+  }
+};
+
+// Cache that holds all used functions
+const cache = {};
+
+// Function that gets or updates cache
+const getFromCache = (funcName, args = []) => {
+  console.log('\n');
+
+  const choosenFunction = cache[funcName] || null;
+
+  if (choosenFunction) {
+    console.log('taking from cache');
+
+    return choosenFunction(...args)
+  } else {
+    const functionFromModule = modules[funcName] || null;
+
+    if (functionFromModule) {
+      console.log('taking from modules');
+      cache[funcName] = functionFromModule;
+
+      return functionFromModule(...args)
+    } else {
+      return functionFromModule;
+    }
+  }
+}
+
+const smile = getFromCache('smile', ['Mark']);
+console.log(smile); // from module // Mark and Grace are smiling
+
+const aSmile = getFromCache('smile', ['Best', 'Vitaliy']);
+console.log(aSmile); // from cache // Best and Vitaliy are smiling
+
+const bSmile = getFromCache('smile');
+console.log(bSmile); // from cache // Faith and Grace are smiling
+
+const soar = getFromCache('soar', ['Bill Gates']);
+console.log(soar); // from module // Bill Gates is soaring
+
+const unknown = getFromCache('unknown');
+console.log(unknown); // null
+
+//=========================================================
+/*  Getting all alphabets from numbers
+
+const date = [...Array(26)].map((e,i)=>(i+10).toString(36))
+
+// log(date)
+// log((11).toString(36))
 //=========================================================
 /* Renaming a destructured object
 const obj = {
