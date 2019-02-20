@@ -6,6 +6,40 @@
 const { log, error } = console;
 const len = x => x.length;
 
+
+//=========================================================
+/*  Inserting and replacing objects
+
+const cache = {
+  1: {
+    loga: a => console.log('You said',a)
+  },
+  2: {
+    logb: b => console.log('He said',b),
+    sayHi: v => log("Say hi", v)
+  },
+  5: {},
+  0: 1
+};
+
+if (cache[0]) {
+  for (let i =0; i < 3; i++) {
+    console.log("correct now", cache[0]++);
+  }
+} else {
+  console.log("incorrect format");
+}
+
+cache[3] = { ["logc"]: b => console.log('They said', b)}
+cache[4] = { ...cache[5], ...sayBye }
+cache[5] = sayBye
+cache[3]["logc"]("hi")
+
+cache[10] = sayBye;
+cache[11] = 
+
+console.log(cache)
+
 //=========================================================
 /*  REgex for plate number
 const phone = "+38 (093) 5892974";
