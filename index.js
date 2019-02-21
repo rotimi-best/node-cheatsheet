@@ -8,6 +8,41 @@ const len = x => x.length;
 
 
 //=========================================================
+/* Check if any value is empty
+
+const isEmpty = val => {
+  let empty;
+  
+  const type = Array.isArray(val) ? "array" : typeof val;
+
+  switch(type) {
+    case 'number':
+      empty = false;
+      break;
+    case 'string':
+      empty = val.trim().length === 0;
+      break;
+    case 'object':
+      empty = Object.entries(val).length === 0 && val.constructor === Object;
+      break;
+    case 'array':
+      empty = len(val) === 0;
+      break;
+    case 'boolean':
+      empty = false;
+      break;
+    default:
+      empty = !val;
+      break;
+  }
+
+  return empty;
+};
+
+if (isEmpty()) log("Empty")
+else log("NOT Empty")
+
+//=========================================================
 /*  Inserting and replacing objects
 
 const cache = {
