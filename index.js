@@ -6,7 +6,30 @@
 const { log, error } = console;
 const len = x => x.length;
 
+//=========================================================
+/* Make request to upwork
+const languages = ["node js", "reactjs", "symfony"];
+const domain = "https://www.upwork.com";
+const jobRoute = "o/jobs/browse"
+const sort = "sort=recency";
+const lang = languages[0].replace(/\s/gi, '%20');
+console.log(lang);
+const jobsPageUrl = `${domain}/${jobRoute}/?q=${lang}&${sort}`;
 
+console.log(jobsPageUrl)
+
+const getJobPosts = async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto('https://example.com');
+  await page.screenshot({path: 'example.png'});
+
+  await browser.close();
+};
+
+const checkIfUrlIsValidCompany = link => link.match(/company/g);
+
+log(checkIfUrlIsValidCompany("www.linkedin.com/company/27047453/"))
 //=========================================================
 /* Check if any value is empty
 
