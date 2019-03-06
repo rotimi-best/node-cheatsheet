@@ -7,6 +7,92 @@ const { log, error } = console;
 const len = x => x.length;
 
 //=========================================================
+/* Find anything with a set of characters with regex
+
+const summary = `<br />\nI also want to use a W2Static plugin to generate static pages hosted on AWS.<br />\nPlease respond with portfolio of doing such things and how you would go about building things &amp;quot;the wordpress way&amp;quot;<br /><br /><b>Budget</b>: $150\n<br /><b>Posted On</b>: March 06, 2019 16:25 UTC<br /><`;
+const AmountRegex = /<b>Posted On<\/b>:\s(.*?)<br \/>/.exec(summary);
+console.log('\n',AmountRegex, '\n');
+
+//=========================================================
+/* Remove dashes in phone number
+const phone = "097-88-99-999";
+const justNum = phone.split("-").join("");
+log(justNum)
+
+//=========================================================
+/* Concatinate string
+function concatenateAll(...args) {
+  return args.join('');
+}
+log(concatenateAll(1, 3, 4, 6, "best"))
+const sent = 1;
+
+//=========================================================
+/* Dummy data of users
+const users = [
+  { duration: '3 to 6 months',
+    rate: 'No feedback yet',
+    country: 'United States',
+    amount: '0 USD',
+    url: 'https://www.upwork.com/job/Full-Stack-Java-Developer-and-architect_~017ea85df820dd2b90/',
+    name: 'Full Stack Java Developer and architect'},
+  { duration: '3 to 6 months',
+    rate: 'No feedback yet',
+    country: 'India',
+    amount: '0 USD',
+    url: 'https://www.upwork.com/job/Developer-needed-with-GoLang-experience_~013d7376c67bc04710/',
+    name: 'Developer needed with GoLang experience'},
+  { duration: 'none',
+    rate: '4.97 Stars, based on 10 feedbacks',
+    country: 'United States',
+    amount: '500 USD',
+    url: 'https://www.upwork.com/job/Devops-Engineer-Migrate-from-Heroku-K8s-GCP_~01b364f59e4f39e35b/',
+    name: 'Devops Engineer - Migrate from Heroku to K8s on GCP'},
+  { duration: 'Less than 1 month',
+    rate: '5.00 Stars, based on 4 feedbacks',
+    country: 'United States',
+    amount: '0 USD',
+    url: 'https://www.upwork.com/job/Devops-engineer_~01c92bdc489634b104/',
+    name: 'Devops engineer' }
+  ];
+//=========================================================
+/* capitalizeFirstLetter
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+
+//=========================================================
+/* Reverse an object
+const reverseObj = (obj) => {
+	const keys = [];
+	const values = [];
+
+	const newObj = {};
+
+	Object.keys(obj).forEach(function (key, index) {
+		keys[index] = key;
+		values[index] = obj[key];
+	});
+
+	for (let i = keys.length-1; i >= 0; i--) {
+		newObj[keys[i]] = values[i];
+  }
+
+	return newObj;
+}
+
+// let job = '==========================================\n\n';
+// for (let user of users) {
+//   user = reverseObj(user)
+//   for (key in user) {
+//     job += `${capitalizeFirstLetter(key)}: ${user[key]}\n`;
+//   }
+//   job += '\n'
+// }
+// job +=  '==========================================';
+
+// console.log(job)
+//=========================================================
 /* Make request to upwork
 const languages = ["node js", "reactjs", "symfony"];
 const domain = "https://www.upwork.com";
