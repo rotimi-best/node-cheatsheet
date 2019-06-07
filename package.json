@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Rotimi-Best/node-cheatsheet/issues"
   },
-  "homepage": "https://github.com/Rotimi-Best/node-cheatsheet#readme"
+  "homepage": "https://github.com/Rotimi-Best/node-cheatsheet#readme",
+  "dependencies": {
+    "telebot": "^1.2.6"
+  }
 }
